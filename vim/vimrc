@@ -1,0 +1,35 @@
+let mapleader = ","
+let maplocalleader = ","
+
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'ElmCast/elm-vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdtree'
+Plug 'vimwiki/vimwiki'
+Plug 'derekwyatt/vim-scala'
+Plug 'majutsushi/tagbar'
+Plug 'vim-scripts/groovy.vim'
+
+" Add plugins to &runtimepath
+call plug#end()
+
+" my settings
+set number
+set ignorecase
+set smartcase
+
+let g:elm_make_output_file="index.html"
+
+nmap <F8> :TagbarToggle<CR>
+nmap <F7> :NERDTreeToggle<CR>
+
+"autocmd VimEnter * NERDTree
+"autocmd VimEnter * wincmd p
+
+set fillchars-=vert:\| | set fillchars+=vert:\ 
+
+
+"TODO add shortcut :w!! for sudo write

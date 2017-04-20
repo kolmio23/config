@@ -12,6 +12,8 @@ Plug 'vimwiki/vimwiki'
 Plug 'derekwyatt/vim-scala'
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/groovy.vim'
+"Plug 'tpope/vim-fugitive'
+"Plug 'airblade/vim-gitgutter'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -34,6 +36,8 @@ set fillchars-=vert:\| | set fillchars+=vert:\
 
 "TODO add shortcut :w!! for sudo write
 
+"use system clipboard
+set clipboard=unnamed
 
 " change language
 set langmenu=en_US
